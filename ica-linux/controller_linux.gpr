@@ -1,0 +1,41 @@
+-- DO NOT MODIFY THIS FILE.
+
+with "libxrif_linux";
+
+project Controller_Linux is
+
+  for Main
+    use ("controller");
+
+  for Source_Dirs use ("icasrc");
+
+  for Object_Dir use "obj-linux";
+
+  for Exec_Dir use ".";
+
+  package Builder is
+    for Executable ("controller.adb") use "controller";
+  end Builder;
+
+  package Compiler is
+    for Default_Switches ("Ada")
+      use ("-g",
+           "-O2",
+	   "-Werror=format-security",
+	   "-gnata",
+           "-gnato",
+           "-gnatwa",
+           "-gnatVa",
+           "-gnat12"
+	   );
+  end Compiler;
+
+  package Binder is
+    for Default_Switches ("Ada") use ("-E", "-static", "-d16k", "-D16k");
+  end Binder;
+
+  package Linker is
+    for Default_Switches("Ada") use ("-Wl,-z,relro", "-static");
+  end Linker;
+
+end Controller_Linux;

@@ -1,0 +1,68 @@
+V "GNAT Lib v2016"
+A -O2
+A -Werror=format-security
+A -gnatA
+A -g
+A -gnata
+A -gnato
+A -gnatwa
+A -gnatVa
+A -gnat12
+A -mtune=generic
+A -march=pentium4
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U hwif%s		hwif.ads		3fc3ca96 EE OO PK IU
+W hwif_types%s		hwif_types.ads		hwif_types.ali
+W mmap%s		mmap.adb		mmap.ali  E
+W system%s		system.ads		system.ali
+W system.storage_elements%s  s-stoele.adb	s-stoele.ali
+
+D ada.ads		20160516092928 3ffc8e18 ada%s
+D a-unccon.ads		20160516092930 f9eb8f06 ada.unchecked_conversion%s
+D hwif.ads		20170503170302 e3b3d640 hwif%s
+D hwif_types.ads	20170503170302 0a0ad0ed hwif_types%s
+D interfac.ads		20160516092928 5ab55268 interfaces%s
+D mmap.ads		20170503170302 d61c1607 mmap%s
+D system.ads		20160516092930 2da59038 system%s
+D s-stoele.ads		20160516092932 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20160516092930 ed88f8fb system.storage_elements%b
+X 3 hwif.ads
+8K9*HWIF 50l5 50e9
+10m4*Addr{7|67M9} 23r52 29r55 35r54 41r56 47r63
+12V14*"+"=15:38{7|67M9} 29s59 35s58 41s60 47s67
+12m18 A{7|67M9}
+13i18 B{8|54I9}
+17E9*Direction 17e48 18r35
+17n23*North{17E9}
+17n30*South{17E9}
+17n37*East{17E9}
+17n43*West{17E9}
+18A9*Direction_Octet(4|7M9)<17E9> 23r20 29r23 35r22 41r24 47r31
+23a4*Traffic_Light{18A9} 24r21
+29a4*Pedestrian_Light{18A9} 30r21
+35a4*Pedestrian_Wait{18A9} 36r21
+41a4*Pedestrian_Button{18A9} 42r21
+47a4*Emergency_Vehicle_Sensor{18A9} 48r21
+X 4 hwif_types.ads
+3K9*HWIF_Types 3|1w6 1r36 4|12e15
+7M9*Octet<5|63M9> 3|18r49
+X 5 interfac.ads
+63M9*Unsigned_8
+X 6 mmap.ads
+3K9*MMap 3|2w6 6r18 10r38 6|9e9
+5V13*Get_MMAP_RW{7|67M9} 3|10s43
+X 7 system.ads
+37K9*System 3|3r6 4w6 10r20 12r25 13r25 14r24 15r14 7|200e11
+67M9*Address 3|10r27 12r32 14r31
+X 8 s-stoele.ads
+42K16*Storage_Elements 3|3w13 13r32 15r21 8|117e28
+54I9*Storage_Offset<integer> 3|13r49
+76V14*"+"{7|67M9} 3|15r39
+81V14*"+"{7|67M9} 3|15r39
+

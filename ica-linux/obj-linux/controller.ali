@@ -1,0 +1,105 @@
+V "GNAT Lib v2012"
+M P W=b
+A -O2
+A -Werror=format-security
+A -g
+A -gnata
+A -gnato
+A -gnatwa
+A -gnatVa
+A -gnat12
+A -gnatA
+P ZX
+R nnnnnnnvnvvnnnnnnnnnnnnvnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnvnnnnnnnnnnnnnn
+
+U controller%b		controller.adb		a3316084 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.calendar%s	a-calend.adb		a-calend.ali
+W ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
+W hwif%s		hwif.ads		hwif.ali
+W hwif_types%s		hwif_types.ads		hwif_types.ali
+W interfaces%s		interfac.ads		interfac.ali
+
+D ada.ads		20120510125803 3ffc8e18
+D a-calend.ads		20120510125748 d86d6c8c
+D a-caldel.ads		20120510125748 9f20b83d
+D a-unccon.ads		20120510125801 f9eb8f06
+D controller.adb	20170516142417 92e50aa5
+D hwif.ads		20170503170241 e3b3d640
+D hwif_types.ads	20170503170241 0a0ad0ed
+D interfac.ads		20120510125815 129923ea
+D mmap.ads		20170503170241 d61c1607
+D system.ads		20120510125846 eb6e42ba
+D s-exctab.ads		20120510125824 66e51330
+D s-stalib.ads		20120510125834 f78bcf95
+D s-stoele.ads		20120510125834 facd7d98
+D s-stoele.adb		20120510125834 afc5dc80
+X 1 ada.ads
+16K9*Ada 19e8 5|3r6 3r24
+X 2 a-calend.ads
+36K13*Calendar 375e17 5|3w10 3r28
+38I9*Time 5|7r17 8r17 9r15
+52V13*Clock{38I9} 5|9s23 19s22 84s24 86s24 113s24 139s24 148s18 149s19 150s11
+. 156s22
+94V14*"+"{38I9} 5|19s28
+97V14*"-"{duration} 5|148s24 149s25 150s17
+X 5 controller.adb
+5U11*Controller 5b11 194l5 194t15
+7i4 NS_LastRan{2|38I9} 84m10 113m10 148r26
+8i4 EW_LastRan{2|38I9} 86m10 139m10 149r27
+9i4 Ped_Last{2|38I9} 150r19 156m10
+10o4 priorityDuration{duration} 150r30 157r23 160r23
+12e4 LastRan{6|17E9} 159m10 162m10 164r13 166m10 169m10 181m13 185m13
+14U14 delayTask 14b14 14>24 45t7 53s13 56s10 59s10 68s7 72s7 79s7 93s10 97s10
+. 103s13 106s10 110s10 119s10 123s9 129s13 132s10 136s10 154s10
+14o24 time{duration} 19r30 21r28 22r23
+15i7 number{integer} 21m10 24r38
+16o7 remainder{duration} 22m10 39m13 39r26 41r13 42r19
+23l7 delay_loop 40l19 40e29
+24i14 I{integer}
+47U14 checkEmergency 47b14 47>29 47>52 61l8 61t22 75s7
+47e29 Direction1{6|17E9} 49r36 51r42
+47e52 Direction2{6|17E9} 49r82 51r88
+50l10 EmergencyLoop 54l19 54e32
+65U14 test 65b14 65>20 65>44 141l8 141t12 158s10 161s10 165s10 168s10 180s13
+. 184s13
+65e20 Direction1{6|17E9} 69r21 73r21 75r22 76r21 80r21 83r10
+65e44 Direction2{6|17E9} 70r21 74r21 75r34 77r21 81r21
+100l10 DelayLoopNS 104l19 104e30
+126l10 DelayLoopEW 130l19 130e30
+144U14 priorities 144b14 172l8 172t18 188s10
+145o7 NS_diff{duration} 148m7 157r13 157r45
+146o7 EW_diff{duration} 149m7 157r55 160r13
+174U14 standardLoop 174b14 191l8 191t20 193s4
+176l7 endlessLoop 190l16 190e27
+X 6 hwif.ads
+8K9*HWIF 5|1w6 1r16 6|50e9
+17E9*Direction 5|12r14 47r41 47r65 65r33 65r57 6|17e48
+17n23*North{17E9} 5|18r26 18r57 25r39 26r31 26r63 27r33 30r33 33r33 36r33
+. 83r23 89r35 90r24 94r24 98r24 101r42 107r24 111r24 150r69 151r30 152r31
+. 155r34 158r15 159r21 164r23 168r15 169r21 179r38 180r18 181r24
+17n30*South{17E9} 5|27r56 30r56 32r31 32r63 33r56 36r56 89r74 91r24 95r24
+. 99r24 101r81 108r24 112r24 150r128 151r64 152r65 155r57 158r22 168r22 179r77
+. 180r25
+17n37*East{17E9} 5|12r27 27r45 29r31 29r62 30r45 33r45 36r45 115r35 116r24
+. 120r24 124r24 127r42 133r24 137r24 150r99 151r42 152r43 155r46 161r15 162r20
+. 165r15 166r21 183r38 184r18 185r24
+17n43*West{17E9} 5|27r68 30r68 33r68 35r31 35r62 36r68 115r73 117r24 121r24
+. 125r24 127r80 134r24 138r24 150r158 151r53 152r54 155r69 161r21 165r21
+. 183r76 184r24
+18A9*Direction_Octet(7|7M9)<17E9>
+23a4*Traffic_Light{18A9} 5|69m7 70m7 73m7 74m7 76m7 77m7 80m7 81m7 90m10
+. 91m10 94m10 95m10 98m10 99m10 107m10 108m10 111m10 112m10 116m10 117m10
+. 120m10 121m10 124m10 125m10 133m10 134m10 137m10 138m10
+29a4*Pedestrian_Light{18A9} 5|18r40 26r46 29r45 32r46 35r45 152m10 155m13
+35a4*Pedestrian_Wait{18A9} 5|18r10 25r23 27m13 30m13 33m13 36m13 150r53 150r83
+. 150r112 150r142 151m10
+41a4*Pedestrian_Button{18A9} 5|26r13 29r13 32r13 35r13
+47a4*Emergency_Vehicle_Sensor{18A9} 5|49r11 49r57 51r17 51r63 89r10 89r49
+. 101r17 101r56 115r10 115r48 127r17 127r55 179r13 179r52 183r13 183r51
+X 7 hwif_types.ads
+3K9*HWIF_Types 5|2w6 2r22 7|12e15
+7M9*Octet<8|55M9>
+X 8 interfac.ads
+55M9*Unsigned_8
+

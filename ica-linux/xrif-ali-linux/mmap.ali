@@ -1,0 +1,103 @@
+V "GNAT Lib v2012"
+A -O2
+A -Werror=format-security
+A -gnatA
+A -g
+A -gnata
+A -gnato
+A -gnatwa
+A -gnatVa
+A -gnat12
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+R nnnnnnnnnnnnnnnnnnnnnvnnnvnnnnnnnnnnnnnnnvnnvnnnnnnnnnnnnnvnnnnvnnnnnnvnnnnnnnnnnnnnn
+
+U mmap%b		mmap.adb		939a5df8 NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.command_line%s	a-comlin.adb		a-comlin.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+W misc2%s		misc2.adb		misc2.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+U mmap%s		mmap.ads		3d7254bd EE NE OO PK
+W system%s		system.ads		system.ali
+
+D ada.ads		20120510125803 3ffc8e18
+D a-comlin.ads		20120510125750 e0accaa5
+D a-except.ads		20120510125752 ec1b44c1
+D a-finali.ads		20120510125753 52ecdc1b
+D a-ioexce.ads		20120510125753 8b9de6cd
+D a-stream.ads		20120510125756 2ca4ee37
+D a-tags.ads		20120510125759 6c0509d0
+D a-textio.ads		20120510125800 386df5d4
+D a-unccon.ads		20120510125801 f9eb8f06
+D interfac.ads		20120510125815 129923ea
+D i-c.ads		20120510125814 5421119b
+D i-cstrin.ads		20120510125814 341d0ddf
+D i-cstrea.ads		20120510125814 1bd72c32
+D misc2.ads		20170503170241 69af67a8
+D mmap.ads		20170503170241 d61c1607
+D mmap.adb		20170503170241 c0f51ef9
+D system.ads		20120510125846 eb6e42ba
+D s-crtl.ads		20120510125824 ac77b159
+D s-exctab.ads		20120510125824 66e51330
+D s-ficobl.ads		20120510125825 443b9d66
+D s-finmas.ads		20120510125825 b95bb341
+D s-finroo.ads		20120510125825 4ff27390
+D s-parame.ads		20120510125832 b6e20cc0
+D s-pooglo.ads		20120510125832 542f33d0
+D s-secsta.ads		20120510125833 eea35a36
+D s-soflin.ads		20120510125833 24c8153c
+D s-stache.ads		20120510125834 596fc1b4
+D s-stalib.ads		20120510125834 f78bcf95
+D s-stoele.ads		20120510125834 facd7d98
+D s-stoele.adb		20120510125834 afc5dc80
+D s-stopoo.ads		20120510125834 7b8fbeee
+D s-traent.ads		20120510125838 5221ee41
+D s-unstyp.ads		20120510125838 6ae15c76
+D s-wchcon.ads		20120510125840 bfeb2e3d
+X 1 ada.ads
+16K9*Ada 19e8 16|1r6 2r6 16r11 45r7
+X 2 a-comlin.ads
+38K13*Command_Line 139e21 16|1w10 16r15
+41V13*Argument_Count{natural} 16|20s24 25s23
+48V13*Argument{string} 16|22s57 29s26
+X 8 a-textio.ads
+49K13*Text_IO 471e16 16|2w10 45r11
+263U14*Put_Line 16|45s19
+X 10 interfac.ads
+36K9*Interfaces 175e15 16|3r6 8r40 40r11
+X 11 i-c.ads
+18K20*C 230e17 16|3r17 8r51 40r22
+X 12 i-cstrin.ads
+36K22*Strings 104e25 16|3w19 8r53 40r24
+47P9*chars_ptr(character) 16|8r61 41r11
+60V13*New_String{47P9} 16|46s12
+62U14*Free 16|48s7
+X 14 misc2.ads
+1K9*Misc2 5e10 16|4w6 22r36
+3V13*Treat_Argument{string} 16|22s42
+X 15 mmap.ads
+3K9*MMap 9l5 9e9 16|6b14 57l5 57t9
+5V13*Get_MMAP_RW{17|64M9} 16|39b13 50l8 50t19
+7U14*Close_MMAP 16|13r24 52b14 55l8 55t18
+X 16 mmap.adb
+8V13 Get_MMAP_RW_Actual{17|64M9} 8>33 9b<c,get_mmap_rw>21 47s12
+8p33 F{12|47P9}
+11U14 Close_MMAP_Actual 12b<c,close_mmap>21 54s7
+15V13 Search_Command_Line_For_SHMEM{string} 15b13 37l8 37t37 43s30
+17i7 I{integer} 20r20 22r66 25r19 28m19 28r24 29r35 32m13 32r18
+22a13 S{string} 24r16
+41p7 F{12|47P9} 46m7 47r31 48m12 48r12
+42m7 S{17|64M9} 47m7 49r14
+43a7 H{string} 45r47 46r23
+X 17 system.ads
+37K9*System 15|1w6 5r32 16|8r79 39r32 42r11 17|151e11
+64M9*Address 15|5r39 16|8r86 39r39 42r18
+

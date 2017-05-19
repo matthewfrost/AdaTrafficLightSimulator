@@ -1,0 +1,30 @@
+V "GNAT Lib v2012"
+A -O2
+A -Werror=format-security
+A -gnatA
+A -g
+A -gnata
+A -gnato
+A -gnatwa
+A -gnatVa
+A -gnat12
+A -mtune=generic
+A -march=x86-64
+P ZX
+R nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnvnnnnnnnnnnnnnn
+
+U hwif_types%s		hwif_types.ads		1893f307 NE OO PU PK
+W interfaces%s		interfac.ads		interfac.ali
+
+D hwif_types.ads	20170503170241 0a0ad0ed
+D interfac.ads		20120510125815 129923ea
+D system.ads		20120510125846 eb6e42ba
+X 1 hwif_types.ads
+3K9*HWIF_Types 12l5 12e15
+7M9*Octet<2|55M9>
+10M9*Int<2|61M9>
+X 2 interfac.ads
+36K9*Interfaces 1|1w6 7r22 10r20 2|175e15
+55M9*Unsigned_8 1|7r33
+61M9*Unsigned_32 1|10r31
+

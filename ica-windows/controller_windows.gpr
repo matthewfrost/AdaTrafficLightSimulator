@@ -1,0 +1,36 @@
+-- DO NOT MODIFY THIS FILE.
+
+with "libxrif_windows";
+
+project Controller_Windows is
+
+  for Main
+    use ("controller");
+
+  for Source_Dirs use ("icasrc");
+
+  for Object_Dir use "obj-windows";
+
+  for Exec_Dir use ".";
+
+  package Builder is
+    for Executable ("controller.adb") use "controller";
+  end Builder;
+
+  package Compiler is
+    for Default_Switches ("Ada")
+      use ("-g",
+           "-O2",
+	   "-Werror=format-security",
+	   "-gnata",
+           "-gnato",
+           "-gnatwa",
+           "-gnatVa",
+           "-gnat12");
+  end Compiler;
+
+  package Binder is
+    for Default_Switches ("Ada") use ("-E");
+  end Binder;
+
+end Controller_Windows;

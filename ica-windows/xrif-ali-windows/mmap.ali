@@ -1,0 +1,106 @@
+V "GNAT Lib v2016"
+A -O2
+A -Werror=format-security
+A -gnatA
+A -g
+A -gnata
+A -gnato
+A -gnatwa
+A -gnatVa
+A -gnat12
+A -mtune=generic
+A -march=pentium4
+P SS ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U mmap%b		mmap.adb		995438e1 NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.command_line%s	a-comlin.adb		a-comlin.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+W misc2%s		misc2.adb		misc2.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+U mmap%s		mmap.ads		fbb9863f EE NE OO PK
+W system%s		system.ads		system.ali
+
+D ada.ads		20160516092928 3ffc8e18 ada%s
+D a-comlin.ads		20160516092930 ea62afbc ada.command_line%s
+D a-except.ads		20160516092928 291912d5 ada.exceptions%s
+D a-ioexce.ads		20160516092926 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20160516092928 119b8fb3 ada.streams%s
+D a-tags.ads		20160516092932 01f5e3ef ada.tags%s
+D a-textio.ads		20160516092932 386df5d4 ada.text_io%s
+D a-unccon.ads		20160516092930 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20160516092928 5ab55268 interfaces%s
+D i-c.ads		20160516092926 5421119b interfaces.c%s
+D i-cstrin.ads		20160516092930 341d0ddf interfaces.c.strings%s
+D i-cstrea.ads		20160516092926 e53d8b8e interfaces.c_streams%s
+D misc2.ads		20170503170302 69af67a8 misc2%s
+D mmap.ads		20170503170302 d61c1607 mmap%s
+D mmap.adb		20170503170302 c0f51ef9 mmap%b
+D system.ads		20160516092930 2da59038 system%s
+D s-crtl.ads		20160516092926 0ebbdb71 system.crtl%s
+D s-exctab.ads		20160516092930 54135002 system.exception_table%s
+D s-ficobl.ads		20160516092932 078245e4 system.file_control_block%s
+D s-parame.ads		20160516092932 7e2a0d7f system.parameters%s
+D s-secsta.ads		20160516092930 86a2856d system.secondary_stack%s
+D s-soflin.ads		20160516092928 14e1eb6c system.soft_links%s
+D s-stache.ads		20160516092932 a37c21ec system.stack_checking%s
+D s-stalib.ads		20160516092930 09bd3940 system.standard_library%s
+D s-stoele.ads		20160516092932 2dc34a04 system.storage_elements%s
+D s-traent.ads		20160516092928 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20160516092930 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20160516092930 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 19e8 15|1r6 2r6 16r11 45r7
+X 2 a-comlin.ads
+38K13*Command_Line 139e21 15|1w10 16r15
+41V13*Argument_Count{natural} 15|20s24 25s23
+48V13*Argument{string} 15|22s57 29s26
+X 7 a-textio.ads
+49K13*Text_IO 471e16 15|2w10 45r11
+263U14*Put_Line 15|45s19
+X 9 interfac.ads
+38K9*Interfaces 184e15 15|3r6 8r40 40r11
+X 10 i-c.ads
+18K20*C 230e17 15|3r17 8r51 40r22
+X 11 i-cstrin.ads
+36K22*Strings 106e25 15|3w19 8r53 40r24
+47P9*chars_ptr 15|8r61 41r11
+60V13*New_String{47P9} 15|46s12
+62U14*Free 15|48s7
+X 13 misc2.ads
+1K9*Misc2 5e10 15|4w6 22r36
+3V13*Treat_Argument{string} 15|22s42
+X 14 mmap.ads
+3K9*MMap 9l5 9e9 15|6b14 57l5 57t9
+5V13*Get_MMAP_RW{16|67M9} 15|39b13 50l8 50t19
+7U14*Close_MMAP 15|13r24 52b14 55l8 55t18
+X 15 mmap.adb
+8V13 Get_MMAP_RW_Actual{16|67M9} 8>33 9b<c,get_mmap_rw>21 47s12
+8p33 F{11|47P9}
+11U14 Close_MMAP_Actual 12b<c,close_mmap>21 54s7
+15V13 Search_Command_Line_For_SHMEM{string} 15b13 37l8 37t37 43s30
+17i7 I{integer} 20r20 22r66 25r19 28m19 28r24 29r35 32m13 32r18
+22a13 S{string} 24r16
+41p7 F{11|47P9} 46m7 47r31 48m12 48r12
+42m7 S{16|67M9} 47m7 49r14
+43a7 H{string} 45r47 46r23
+X 16 system.ads
+37K9*System 14|1w6 5r32 15|8r79 39r32 42r11 16|200e11
+67M9*Address 14|5r39 15|8r86 39r39 42r18
+

@@ -1,0 +1,33 @@
+V "GNAT Lib v2016"
+A -O2
+A -Werror=format-security
+A -gnatA
+A -g
+A -gnata
+A -gnato
+A -gnatwa
+A -gnatVa
+A -gnat12
+A -mtune=generic
+A -march=pentium4
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U hwif_types%s		hwif_types.ads		50bf8285 NE OO PU PK
+W interfaces%s		interfac.ads		interfac.ali
+
+D hwif_types.ads	20170503170302 0a0ad0ed hwif_types%s
+D interfac.ads		20160516092928 5ab55268 interfaces%s
+D system.ads		20160516092930 2da59038 system%s
+X 1 hwif_types.ads
+3K9*HWIF_Types 12l5 12e15
+7M9*Octet<2|63M9>
+10M9*Int<2|74M9>
+X 2 interfac.ads
+38K9*Interfaces 1|1w6 7r22 10r20 2|184e15
+63M9*Unsigned_8 1|7r33
+74M9*Unsigned_32 1|10r31
+

@@ -1,0 +1,10 @@
+project LibXrif_Windows is
+
+  for Externally_Built use "True";
+  for Source_Dirs use ("fixedsrc");
+  for Library_Name use "xrif";
+  for Library_Dir use "xrif-lib-windows";
+  for Library_ALI_Dir use "xrif-ali-windows";
+  for Library_Kind use "static";
+
+end LibXrif_Windows;

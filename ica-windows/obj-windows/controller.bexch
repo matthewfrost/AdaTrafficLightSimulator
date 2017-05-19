@@ -1,0 +1,22 @@
+[GENERATED OBJECT FILE]
+b__controller.o
+[PROJECT FILES]
+E:\Downloads\ica-windows\ica-windows\controller_windows.gpr
+20170503170302
+E:\Downloads\ica-windows\ica-windows\libxrif_windows.gpr
+20170503170302
+[BOUND OBJECT FILES]
+E:\Downloads\ica-windows\ica-windows\obj-windows\controller.o
+[GENERATED SOURCE FILES]
+b__controller.ads
+b__controller.adb
+b__controller.ali
+[RESULTING OPTIONS]
+-LE:\Downloads\ica-windows\ica-windows\obj-windows\
+-LE:\Downloads\ica-windows\ica-windows\obj-windows\
+-LE:\Downloads\ica-windows\ica-windows\xrif-ali-windows\
+-LC:/gnat/2016/lib/gcc/i686-pc-mingw32/4.9.4/adalib/
+-static
+-static-libgcc
+C:/gnat/2016/lib/gcc/i686-pc-mingw32/4.9.4/adalib/libgnat.a
+-Wl,--stack=0x2000000
